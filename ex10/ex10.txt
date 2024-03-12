@@ -2,10 +2,14 @@
         String1: day
         String2: not
 
+Solución: egrep 'day|not' sample.txt
+
 
 2) Captura las líneas que tengan alguna de las dos palabras enteras:
         String1: he
         String2: in
+
+Solución: egrep '\b(he|in)\b' sample.txt
 
 
 3) Captura las lineas que contengan algunas de las siguientes cadenas:
@@ -13,6 +17,8 @@
         String2: be
         String3: to
         String4: he
+
+Solución: egrep 'you|be|to|he' sample.txt
 
 
 4) Captura las lineas que contengan algunas de las siguientes cadenas:
@@ -24,8 +30,11 @@
         String1: it
         String2: do
 
+Solución: egrep 'you|be|to|he' sample.txt | egrep -v 'it|do'
+
 
 5) Muestra las lineas que empiezan por cualquiera de estas dos cadenas:
         String1: no
         String2: to
 
+Solución: egrep '^(no|to)' sample.txt

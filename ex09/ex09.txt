@@ -11,16 +11,18 @@ Solución: egrep '^no*' sample.txt
 Solución: egrep '*it$' sample.txt
 
 3) Muestra las lineas que contienen la palabra: do
-Solución: egrep '*?do*?' sample.txt
+Solución: egrep '\bdo\b' sample.txt
 
 4) Muestra las lineas que contienen palabras que empiezan por: do
+Solución: egrep '\bdo' sample.txt
 
 
 5) Muestra las lineas que contienen palabras que acaban por: do
+Solución: egrep 'do\b' sample.txt
 
 
 6) Muestra las lineas que empiezan en: ^
-
+Solución: egrep '^\^' sample.txt
 
 7) Muestra las lineas que acaban en: $
-
+Solución: egrep '\$$' sample.txt
